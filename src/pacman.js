@@ -1,5 +1,6 @@
 function Pacman() {
 	this.currentCell
+	
 }
 
 Pacman.prototype.move = function(keyDirection) {
