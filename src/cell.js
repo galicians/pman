@@ -1,6 +1,7 @@
 function Cell() {
 	this.content
 	this.isAvailable = true
+
 }
 
 Cell.prototype.changeContent = function(obj) {

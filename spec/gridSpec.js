@@ -20,5 +20,10 @@ describe("the grid", function() {
 		expect(grid['1:2']).toEqual(new Obj)
 	})
 
+	it("should be able to hold a pacman", function() {
+		grid['1:1'] = new Pacman
+		expect(grid['1:1']).toEqual(new Pacman)
+	})
+
 	
 })
