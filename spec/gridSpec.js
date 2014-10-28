@@ -1,6 +1,6 @@
 describe("the grid", function() {
 
-	var grid
+	var grid, cell
 
 	beforeEach(function() {
 		grid = new Grid
@@ -15,7 +15,9 @@ describe("the grid", function() {
 	})
 
 	it("should be made with the object is passed to the factory", function() {
-		grid.factory(new cell)
+		function Obj() {}
+		grid.factory(Obj)
+		expect(grid['1:2']).toEqual(new Obj)
 	})
 
 	
